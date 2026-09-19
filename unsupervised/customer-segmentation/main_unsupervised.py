@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import numpy as np 
 
-customer_data = pd.read_csv("/Users/santoshr/Documents/TNS_project_1/unsupervised/customer-segmentation/customers.csv")
+customer_data = pd.read_csv("customers.csv")
 X = customer_data[["annual_income_k", "spending_score"]]
 kmeans = KMeans(n_clusters=3, random_state=42)
 kmeans.fit(X)
