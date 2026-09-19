@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-customer_data = pd.read_csv('/Users/santoshr/Documents/TNS_project_1/unsupervised/customer-segmentation/customers.csv')
+customer_data = pd.read_csv('customers.csv')
 print(customer_data)
 print(min(customer_data['annual_income_k']),max(customer_data['annual_income_k']),min(customer_data['spending_score']),max(customer_data['spending_score']))
 print(customer_data.describe())
