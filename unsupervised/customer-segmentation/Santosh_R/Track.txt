@@ -1,0 +1,22 @@
+Lowest income = 15K
+HIGHEST INCOME =120.8K
+
+LOWEST SPENDING SCORE = 3.4
+HIGHEST SPENDING SCORE = 100.
+
+DATA DETAILS :
+TEST      annual_income_k  spending_score
+count       600.000000      600.000000
+mean         68.380833       63.887167
+std          28.833117       28.681534
+min          15.000000        3.400000
+25%          34.075000       30.575000
+50%          80.500000       77.100000
+75%          90.700000       86.125000
+max         120.800000      100.000000
+
+
+Heree we have 3 types of people so ce na set them as 
+udhari - low income high spend 
+pisnari - high income low spend
+selavali - high income high spending_score
