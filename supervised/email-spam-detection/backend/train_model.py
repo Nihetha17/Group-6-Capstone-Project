@@ -8,8 +8,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, classification_report
 
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = BASE_DIR.parent
 # Load dataset
-df = pd.read_csv("spam_emails.csv")
+
+df = pd.read_csv(BASE_DIR / "spam_emails.csv")
 
 # Input and target
 X = df["email"]
@@ -48,6 +53,6 @@ print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 
 # Save trained model
-joblib.dump(model, "spam_model.pkl")
+joblib.dump(model, PROJECT_DIR / "spam_model.pkl")
 
 print("\nModel saved as spam_model.pkl")

@@ -12,8 +12,11 @@ app = FastAPI(
 
 
 # Load trained model
-model = joblib.load("spam_model.pkl")
+from pathlib import Path
 
+MODEL_PATH = Path(__file__).resolve().parent.parent / "spam_model.pkl"
+
+model = joblib.load(MODEL_PATH)
 
 # Request model
 class EmailRequest(BaseModel):
