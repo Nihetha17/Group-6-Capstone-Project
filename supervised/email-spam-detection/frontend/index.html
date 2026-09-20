@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Spam Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Email Spam Detection</h1>
+            <p>
+                Analyze an email and identify whether it is
+                <strong>Spam</strong> or <strong>Not Spam</strong>.
+            </p>
+        </header>
+
+
+        <!-- Email Input Section -->
+        <section class="email-section">
+
+            <label for="emailInput">Enter Email Content</label>
+
+            <textarea
+                id="emailInput"
+                placeholder="Paste your email content here..."
+            ></textarea>
+
+            <button id="checkButton">
+                Check Email
+            </button>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section class="result-section">
+
+            <h2>Detection Result</h2>
+
+            <div id="result">
+
+                <p class="result-text">
+                    Your prediction will appear here.
+                </p>
+
+                <div class="result-details">
+
+                    <div class="result-item">
+                        <span>Prediction</span>
+                        <strong id="prediction">--</strong>
+                    </div>
+
+                    <div class="result-item">
+                        <span>Confidence</span>
+                        <strong id="confidence">--</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+
