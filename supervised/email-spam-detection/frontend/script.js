@@ -42,7 +42,7 @@ checkButton.addEventListener("click", async () => {
         }
 
         prediction.textContent = data.prediction;
-        confidence.textContent = data.confidence + "%";
+        confidence.textContent = (data.confidence * 100).toFixed(2) +"%";
 
         if (data.prediction.toLowerCase() === "spam") {
             resultText.textContent = "⚠️ This email appears to be Spam.";
