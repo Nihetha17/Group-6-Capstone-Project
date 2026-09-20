@@ -5,7 +5,7 @@ const confidence = document.getElementById("confidence");
 const resultText = document.querySelector(".result-text");
 
 // Backend API
-const API_URL = "http://127.0.0.1:5000/predict";
+const API_URL = "http://127.0.0.1:8000/predict";
 
 checkButton.addEventListener("click", async () => {
 
@@ -58,7 +58,7 @@ checkButton.addEventListener("click", async () => {
         confidence.textContent = "--";
         resultText.textContent = "Unable to connect to the server.";
 
-        alert("Could not connect to the Flask backend.");
+        alert("Could not connect to the FastAPI backend.");
 
     } finally {
 
